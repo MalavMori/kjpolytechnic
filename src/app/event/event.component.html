@@ -1,0 +1,14 @@
+<div class="event_main">
+    @for (event of eventdata; track event) {
+        <div class="event_box">
+            <div class="event_title">
+                <h3>{{event.title}}</h3>
+            </div>
+            <div class="event_body">
+                <p>{{event.body}}</p>
+            </div>
+        </div>
+    }
+    <mat-spinner style="margin-top: 100px;" *ngIf="!isloded"></mat-spinner>
+    
+</div>
